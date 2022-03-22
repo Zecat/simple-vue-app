@@ -69,7 +69,8 @@
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": "eslint",
     "*.{yml, yaml}": "yamllint",
-    "*.{md}": "markdownlint"
+    "*.{md}": "markdownlint",
+    "*.{js,jsx,vue,ts,tsx,js,css,md}": "prettier"
   },
   "release": {
     "plugins": [
