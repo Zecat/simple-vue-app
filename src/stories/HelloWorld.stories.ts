@@ -1,17 +1,17 @@
-import HelloWorld from '../components/HelloWorld.vue'
+import HelloWorld from "../components/HelloWorld.vue";
 
 export default {
-  title: 'Example/HelloWorld',
+  title: "Example/HelloWorld",
   component: HelloWorld,
   argTypes: {},
-}
+};
 
 const Template = (args: string) => ({
   components: { HelloWorld },
   setup() {
-    return { args }
+    return { args };
   },
-  template: '<hello-world />',
-})
+  template: "<hello-world />",
+});
 
-export const Primary = Template.bind({})
+export const Primary = Template.bind({});
