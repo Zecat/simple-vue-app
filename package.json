@@ -74,11 +74,11 @@
     ]
   },
   "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": "eslint",
-    "*.{css,scss,vue}": "stylelint",
+    "*.{js,jsx,vue,ts,tsx}": "eslint --fix",
+    "*.{css,scss,vue}": "stylelint --fix",
     "*.{yml, yaml}": "yamllint",
-    "*.{md}": "markdownlint",
-    "*.{js,jsx,vue,ts,tsx,js,css,md}": "prettier"
+    "*.{md}": "markdownlint --fix",
+    "*.{js,jsx,vue,ts,tsx,js,css,md}": "prettier --write"
   },
   "release": {
     "plugins": [
