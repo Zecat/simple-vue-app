@@ -53,5 +53,24 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": "eslint"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json",
+            "yarn.lock"
+          ]
+        }
+      ],
+      "@semantic-release/github"
+    ]
   }
 }
