@@ -68,7 +68,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": "eslint",
-    "*.{yml, yaml}": "yamllint"
+    "*.{yml, yaml}": "yamllint",
+    "*.{md}": "markdownlint"
   },
   "release": {
     "plugins": [
