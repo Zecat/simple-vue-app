@@ -38,9 +38,9 @@ export default {
     return {
       classes: computed(() => ({
         "storybook-button": true,
-        "storybook-button--primary": props.primary,
-        "storybook-button--secondary": !props.primary,
-        [`storybook-button--${props.size || "medium"}`]: true,
+        "storybook-button-primary": props.primary,
+        "storybook-button-secondary": !props.primary,
+        [`storybook-button-${props.size || "medium"}`]: true,
       })),
       style: computed(() => ({
         backgroundColor: props.backgroundColor,
