@@ -1,0 +1,30 @@
+name: Watchman
+on:
+  push:
+    branches-ignore:
+      - master
+      - gh-pages
+jobs:
+  check-project:
+    name: Check project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install --immutable
+      - name: Build
+        run: yarn build
+      - name: Lint
+        run: yarn lint
+      - name: Unit tests
+        run: yarn test:unit
+      - name: E2E tests
+        run: yarn test:e2e:ci
