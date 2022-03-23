@@ -5,6 +5,10 @@ module.exports = {
   core: {
     builder: 'storybook-builder-vite',
   },
+  viteFinal: async (config) => {
+    config.base = '/simple-vue-app/storybook/'
+    return config
+  },
   webpackFinal: async (config, { configType }) => {
     config.output.publicPath = '/simple-vue-app/storybook/'
     return config
