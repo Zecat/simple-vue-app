@@ -43,6 +43,18 @@ yarn storybook
 yarn build
 ```
 
+### Lint + autofix
+
+```sh
+yarn lint        # run all linters in parallel
+
+yarn lint:eslint # eslint
+yarn lint:style  # stylelint
+yarn lint:md     # mardownlint
+yarn lint:yaml   # yaml-lint
+yarn format      # prettier
+```
+
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
