@@ -86,7 +86,7 @@
     "*.{js,jsx,vue,ts,tsx}": "eslint --fix",
     "*.{css,scss,vue}": "stylelint --fix",
     "*.{yml, yaml}": "yamllint",
-    "*.{md}": "markdownlint --fix",
+    "*.{md}": "markdownlint --fix --disable line-length",
     "*": "prettier --write --ignore-unknown"
   },
   "release": {
