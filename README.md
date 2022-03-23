@@ -34,7 +34,8 @@ yarn dev
 ### Storybook
 
 ```sh
-yarn storybook
+yarn storybook       # live reload
+yarn build-storybook # build storybook-static
 ```
 
 ### Type-Check, Compile and Minify for Production
