@@ -27,8 +27,8 @@ jobs:
         run: yarn test:unit
       - name: E2E tests
         run: yarn test:e2e:ci
-      - name: Build Storybook and add to dist
-        run: yarn build-storybook && mv storybook-static dist/storybook
+      - name: Build Storybook in dist/storybook
+        run: yarn build-storybook --output-dir dist/storybook
       - name: Semantic release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
