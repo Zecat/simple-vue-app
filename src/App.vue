@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "@/components/HelloWorld.vue";
+import { RouterLink, RouterView } from 'vue-router'
+import HelloWorld from '@/components/HelloWorld.vue'
 </script>
 
 <template>
@@ -27,7 +27,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 </template>
 
 <style>
-@import "@/assets/base.css";
+@import '@/assets/base.css';
 
 #app {
   max-width: 1280px;
@@ -38,33 +38,37 @@ import HelloWorld from "@/components/HelloWorld.vue";
 }
 
 header {
-  line-height: 1.5;
   max-height: 100vh;
+
+  line-height: 1.5;
 }
 
 .logo {
   display: block;
+
   margin: 0 auto 2rem;
 }
 
 a,
 .green {
+  color: hsl(160deg 100% 37% / 100%);
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+
   transition: 0.4s;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: hsl(160deg 100% 37% / 20%);
   }
 }
 
 nav {
   width: 100%;
+  margin-top: 2rem;
+
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
@@ -77,7 +81,9 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
+
   padding: 0 1rem;
+
   border-left: 1px solid var(--color-border);
 }
 
@@ -94,19 +100,21 @@ nav a:first-of-type {
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     padding: 0 2rem;
   }
 
   header {
     display: flex;
     place-items: center;
+
     padding-right: calc(var(--section-gap) / 2);
   }
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
     flex-wrap: wrap;
+    place-items: flex-start;
   }
 
   .logo {
@@ -114,12 +122,12 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
     margin-top: 1rem;
+    margin-left: -1rem;
+    padding: 1rem 0;
+
+    font-size: 1rem;
+    text-align: left;
   }
 }
 </style>

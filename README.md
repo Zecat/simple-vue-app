@@ -1,59 +1,104 @@
-# simple-app
+# simple-vue-app
 
-This template should help get you started developing with Vue 3 in Vite.
+Simple Vue application with detailed toolchain, for demonstration purpose.
 
-## Recommended IDE Setup
+Note: at this point, the app content and storybook are placeholders
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+[App demo](https://Zecat.github.io/simple-vue-app) - [Storybook](https://Zecat.github.io/simple-vue-app/storybook)
 
-## Type Support for `.vue` Imports in TS
+## Techno involved
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- [Vue](https://vuejs.org/) + [Vite](https://vitejs.dev/) + [Typescript](https://www.typescriptlang.org/)
+- [Storybook](https://storybook.js.org/)
+- [Cypress](https://www.cypress.io/) + [Vitest](https://vitest.dev/)
+- [Husky](https://typicode.github.io/husky/#/) + [lint staged](https://github.com/okonet/lint-staged#readme)
+- [Eslint](https://eslint.org/) + [prettier](https://prettier.io/)
+- [Yamllint](https://github.com/rasshofer/yaml-lint)
+- [markdownlint](https://github.com/DavidAnson/markdownlint)
+- [Stylelint](stylelint.io/) + [ordered rules](https://github.com/theKashey/stylelint-semantic-groups)
+- [Commitlint](https://commitlint.js.org/) + [Angular commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
+- [Semantic release](https://semantic-release.gitbook.io/semantic-release/)
+- [GitHub Actions](https://github.com/features/actions)
+- [Github Flow](https://githubflow.github.io/)
 
 ## Project Setup
 
 ```sh
-npm install
+yarn install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+yarn dev
+```
+
+### Storybook
+
+```sh
+yarn storybook       # live reload
+yarn build-storybook # build storybook-static
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-npm run build
+yarn build
+```
+
+### Lint + autofix
+
+```sh
+yarn lint        # run all linters in parallel
+
+yarn lint:eslint # eslint
+yarn lint:style  # stylelint
+yarn lint:md     # mardownlint
+yarn lint:yaml   # yaml-lint
+yarn format      # prettier
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
-npm run test:unit
+yarn test:unit
 ```
 
 ### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
 
 ```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
+yarn build
+yarn test:e2e # or `yarn test:e2e:ci` for headless testing
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
-npm run lint
+yarn lint
 ```
+
+## CI with Github Actions
+
+### [watchman.yml](https://github.com/Zecat/simple-vue-app/blob/master/.github/workflows/watchman.yml)
+
+Runs on push on any branch except [master, gh-pages]
+
+- build, lint & test project
+
+### [release.yml](https://github.com/Zecat/simple-vue-app/blob/master/.github/workflows/release.yml)
+
+Runs on push on master
+
+- build, lint & test project
+- build storybook
+- perform semantic release
+  - analyze commit messages
+  - generate changelog according
+  - choose & bump npm version
+  - generate release commit
+  - create release tag
+- update github pages
+
+## Troubleshooting
+
+- pnpm issue: [storybook-builder-vite#55](https://github.com/eirslett/storybook-builder-vite/issues/55)
