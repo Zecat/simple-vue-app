@@ -2,7 +2,9 @@
 
 Simple Vue application with detailed toolchain, for demonstration purpose.
 
-[App demo](https://Zecat.github.io/simple-vue-app) - [Components demo](https://Zecat.github.io/simple-vue-app/storybook)
+Note: at this point, the app content and storybook are placeholders
+
+[App demo](https://Zecat.github.io/simple-vue-app) - [Storybook](https://Zecat.github.io/simple-vue-app/storybook)
 
 ## Techno involved
 
