@@ -5,4 +5,12 @@ module.exports = {
   core: {
     builder: 'storybook-builder-vite',
   },
+  webpackFinal: async (config, { configType }) => {
+    config.output.publicPath = '/simple-vue-app/storybook/'
+    return config
+  },
+  managerWebpack: async (config) => {
+    config.output.publicPath = '/simple-vue-app/storybook/'
+    return config
+  },
 }
