@@ -73,6 +73,10 @@
     "vue-tsc": "^0.31.4",
     "yaml-lint": "^1.2.4"
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
