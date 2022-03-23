@@ -77,11 +77,6 @@
     "semi": false,
     "singleQuote": true
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": "eslint --fix",
     "*.{css,scss,vue}": "stylelint --fix",
