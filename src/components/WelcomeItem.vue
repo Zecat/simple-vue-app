@@ -68,7 +68,7 @@ h3 {
     position: absolute;
     left: 0;
     bottom: calc(50% + 25px);
-    content: " ";
+    content: ' ';
 
     height: calc(50% - 25px);
 
@@ -79,7 +79,7 @@ h3 {
     position: absolute;
     top: calc(50% + 25px);
     left: 0;
-    content: " ";
+    content: ' ';
 
     height: calc(50% - 25px);
 
