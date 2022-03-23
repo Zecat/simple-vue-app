@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
       - name: Build
-        run: yarn build
+        run: yarn build --base=/simple-vue-app/
       - name: Lint
         run: yarn lint
       - name: Unit tests
