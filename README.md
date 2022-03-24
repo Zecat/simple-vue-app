@@ -18,6 +18,7 @@ Note: at this point, the app content and storybook are placeholders
 - [Stylelint](stylelint.io/) + [ordered rules](https://github.com/theKashey/stylelint-semantic-groups)
 - [Commitlint](https://commitlint.js.org/) + [Angular commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
 - [Semantic release](https://semantic-release.gitbook.io/semantic-release/)
+- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import#readme) + [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components#readme)
 - [GitHub Actions](https://github.com/features/actions)
 - [Github Flow](https://githubflow.github.io/)
 
