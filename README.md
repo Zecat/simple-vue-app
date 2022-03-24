@@ -109,10 +109,6 @@ Runs on push on master
   - create release tag
 - update github pages
 
-## Troubleshooting
-
-- pnpm issue: [storybook-builder-vite#55](https://github.com/eirslett/storybook-builder-vite/issues/55)
-
 [vue]: https://vuejs.org/
 [typescript]: https://www.typescriptlang.org/
 [vite]: https://vitejs.dev/
