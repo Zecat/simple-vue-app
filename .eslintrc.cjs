@@ -9,6 +9,7 @@ module.exports = {
     '@vue/eslint-config-typescript/recommended',
     '@vue/eslint-config-prettier',
     'plugin:storybook/recommended',
+    './.eslintrc-auto-import.json',
   ],
   env: {
     'vue/setup-compiler-macros': true,
