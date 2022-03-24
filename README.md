@@ -8,19 +8,28 @@ Note: at this point, the app content and storybook are placeholders
 
 ## Techno involved
 
-- [Vue](https://vuejs.org/) + [Vite](https://vitejs.dev/) + [Typescript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- [Cypress](https://www.cypress.io/) + [Vitest](https://vitest.dev/)
-- [Husky](https://typicode.github.io/husky/#/) + [lint staged](https://github.com/okonet/lint-staged#readme)
-- [Eslint](https://eslint.org/) + [prettier](https://prettier.io/)
-- [Yamllint](https://github.com/rasshofer/yaml-lint)
-- [markdownlint](https://github.com/DavidAnson/markdownlint)
-- [Stylelint](stylelint.io/) + [ordered rules](https://github.com/theKashey/stylelint-semantic-groups)
-- [Commitlint](https://commitlint.js.org/) + [Angular commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
-- [Semantic release](https://semantic-release.gitbook.io/semantic-release/)
-- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import#readme) + [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components#readme)
-- [GitHub Actions](https://github.com/features/actions)
-- [Github Flow](https://githubflow.github.io/)
+- [Vue](https://vuejs.org/) + [Typescript](https://www.typescriptlang.org/)
+- Build
+  - [Vite](https://vitejs.dev/)
+  - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import#readme) + [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components#readme)
+- Doc
+  - [Storybook](https://storybook.js.org/)
+- Tests
+  - [Cypress](https://www.cypress.io/) + [Vitest](https://vitest.dev/)
+- Git strategies
+  - [Husky](https://typicode.github.io/husky/#/) + [lint staged](https://github.com/okonet/lint-staged#readme)
+  - [Semantic release](https://semantic-release.gitbook.io/semantic-release/)
+  - [Github Flow](https://githubflow.github.io/)
+- Linter
+  - [Eslint](https://eslint.org/)
+  - [prettier](https://prettier.io/)
+  - [Yamllint](https://github.com/rasshofer/yaml-lint)
+  - [markdownlint](https://github.com/DavidAnson/markdownlint)
+  - [Stylelint](stylelint.io/) + [ordered rules](https://github.com/theKashey/stylelint-semantic-groups)
+  - [Commitlint](https://commitlint.js.org/) + [Angular commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
+- CI
+  - [GitHub Actions](https://github.com/features/actions)
+  - [github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
 
 ## Project Setup
 
