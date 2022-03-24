@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "vite --base=/simple-vue-app/",
+    "dev": "vite",
     "build": "vue-tsc --noEmit && vite build --base=/simple-vue-app/",
     "preview": "vite preview --port 5050 --base=/simple-vue-app/",
     "test:unit": "vitest --environment jsdom",
