@@ -1,3 +1,9 @@
+# [1.1.0](https://github.com/Zecat/simple-vue-app/compare/v1.0.2...v1.1.0) (2022-03-24)
+
+### Features
+
+- **vite:** auto-import using unplugin ([b12800d](https://github.com/Zecat/simple-vue-app/commit/b12800dd0f09f499caf01094845d91611925a0d0))
+
 ## [1.0.2](https://github.com/Zecat/simple-vue-app/compare/v1.0.1...v1.0.2) (2022-03-24)
 
 ### Bug Fixes
