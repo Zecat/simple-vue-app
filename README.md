@@ -4,32 +4,32 @@ Simple Vue application with detailed toolchain, for demonstration purpose.
 
 Note: at this point, the app content and storybook are placeholders
 
-[App demo](https://Zecat.github.io/simple-vue-app) - [Storybook](https://Zecat.github.io/simple-vue-app/storybook)
+[App demo](https://Zecat.github.io/simple-vue-app) - [Storybook & Doc](https://Zecat.github.io/simple-vue-app/storybook)
 
 ## Techno involved
 
-- [Vue](https://vuejs.org/) + [Typescript](https://www.typescriptlang.org/)
+- [Vue] + [Typescript]
 - Build
-  - [Vite](https://vitejs.dev/)
-  - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import#readme) + [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components#readme)
+  - [Vite]
+  - [unplugin-auto-import] + [unplugin-vue-components]
 - Doc
-  - [Storybook](https://storybook.js.org/)
+  - [Storybook]
 - Tests
-  - [Cypress](https://www.cypress.io/) + [Vitest](https://vitest.dev/)
+  - [Cypress] + [Vitest]
 - Git strategies
-  - [Husky](https://typicode.github.io/husky/#/) + [lint staged](https://github.com/okonet/lint-staged#readme)
-  - [Semantic release](https://semantic-release.gitbook.io/semantic-release/)
-  - [Github Flow](https://githubflow.github.io/)
+  - [Husky] + [lint staged]
+  - [Semantic release]
+  - [Github Flow]
 - Linter
-  - [Eslint](https://eslint.org/)
-  - [prettier](https://prettier.io/)
-  - [Yamllint](https://github.com/rasshofer/yaml-lint)
-  - [markdownlint](https://github.com/DavidAnson/markdownlint)
-  - [Stylelint](stylelint.io/) + [ordered rules](https://github.com/theKashey/stylelint-semantic-groups)
-  - [Commitlint](https://commitlint.js.org/) + [Angular commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
+  - [ESlint]
+  - [Prettier]
+  - [Yamllint]
+  - [markdownlint]
+  - [Stylelint] + [ordered rules]
+  - [Commitlint] + [Angular commit message guidelines]
 - CI
-  - [GitHub Actions](https://github.com/features/actions)
-  - [github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
+  - [GitHub Actions]
+  - [github-pages-deploy-action]
 
 ## Project Setup
 
@@ -68,20 +68,20 @@ yarn lint:yaml   # yaml-lint
 yarn format      # prettier
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Run Unit Tests with [Vitest]
 
 ```sh
 yarn test:unit
 ```
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+### Run End-to-End Tests with [Cypress]
 
 ```sh
 yarn build
 yarn test:e2e # or `yarn test:e2e:ci` for headless testing
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Lint with [ESLint]
 
 ```sh
 yarn lint
@@ -112,3 +112,26 @@ Runs on push on master
 ## Troubleshooting
 
 - pnpm issue: [storybook-builder-vite#55](https://github.com/eirslett/storybook-builder-vite/issues/55)
+
+[vue]: https://vuejs.org/
+[typescript]: https://www.typescriptlang.org/
+[vite]: https://vitejs.dev/
+[unplugin-auto-import]: https://github.com/antfu/unplugin-auto-import#readme
+[unplugin-vue-components]: https://github.com/antfu/unplugin-vue-components#readme
+[storybook]: https://storybook.js.org/
+[cypress]: https://www.cypress.io/
+[vitest]: https://vitest.dev/
+[husky]: https://typicode.github.io/husky/#/
+[lint staged]: https://github.com/okonet/lint-staged#readme
+[semantic release]: https://semantic-release.gitbook.io/semantic-release/
+[github flow]: https://githubflow.github.io/
+[eslint]: https://eslint.org/
+[prettier]: https://prettier.io/
+[yamllint]: https://github.com/rasshofer/yaml-lint
+[markdownlint]: https://github.com/DavidAnson/markdownlint
+[stylelint]: https://stylelint.io/
+[ordered rules]: https://github.com/theKashey/stylelint-semantic-groups
+[commitlint]: https://commitlint.js.org/
+[angular commit message guidelines]: https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines
+[github actions]: https://github.com/features/actions
+[github-pages-deploy-action]: https://github.com/JamesIves/github-pages-deploy-action
